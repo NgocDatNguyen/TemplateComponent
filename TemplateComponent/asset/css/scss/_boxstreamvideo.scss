@@ -1,0 +1,115 @@
+.box-stream-video {
+    &[data-layout="1"] {
+        .box-stream-video-top {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .box-stream-video-title {
+                font-size: 24px;
+                font-weight: 600;
+                color: #00365A;
+                text-transform: uppercase;
+                display: block;
+                margin-right: 49px;
+                height: auto;
+                line-height: 31px;
+                position: relative;
+                padding-left: 12px;
+
+                &:before {
+                    width: 3px;
+                    height: 20px;
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    background-color: #E82727;
+                    top: 5px;
+                }
+            }
+
+            .box-stream-video-menu {
+                display: flex;
+
+                li {
+                    a {
+                        font-size: 16px;
+                        color: #E82727;
+                        line-height: 20px;
+                        font-weight: 600;
+
+                        .box-stream-video-menu-item-icon {
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .box-category-middle {
+            display: flex;
+            flex-wrap: wrap;
+
+            .box-stream-video-item {
+                width: calc(33.33% - 19px);
+                margin-bottom: 37px;
+                margin-right: 28px;
+
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+
+            .box-stream-video-link-with-avatar {
+                display: block;
+                position: relative;
+                box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
+                border: 1px solid #FFFFFF;
+                margin-bottom: 20px;
+
+                .box-stream-video-avatar {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:after {
+                    width: 46px;
+                    height: 46px;
+                    content: "";
+                    position: absolute;
+                    background: url(../../asset/image/icon/icon-play-video.png) no-repeat;
+                    position: absolute;
+                    top: calc(50% - 23px);
+                    left: calc(50% - 23px);
+                }
+            }
+
+            .box-stream-video-time {
+                background: #000c;
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                border-radius: 4px;
+                font-size: 12px;
+                line-height: 16px;
+                color: #fff;
+                padding: 2px 3px;
+            }
+
+            .box-stream-video-content {
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: normal;
+            }
+
+            .box-stream-video-link-title {
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 600;
+                display: block;
+            }
+        }
+    }
+}
